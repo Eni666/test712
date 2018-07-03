@@ -1,0 +1,11 @@
+﻿h1 {
+    border-bottom-color: rgba(201, 76, 76, 0.3);
+    font-size: 2em;
+    column-span: all;
+    margin-left: 500px;
+}
+
+.Header {
+    border-style: dotted;
+}
+

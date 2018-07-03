@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Övning30.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body style="background-color: darkseagreen">
+    <div class="container">
+        <div style="text-align: center" class="jumbotron">
+            <h1>The Contactlist!</h1>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+        <h3 style="text-indent: 90px">MY MENU</h3>
+
+        <div>
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+ 
+    <div>
+        <h2 style="font-size: 20px">List group of new added persons</h2>
+        <ul style="width: 320px" class="list-group">
+            <li class="list-group-item">New contacts<span class="badge">12</span></li>
+        </ul>
+    </div>
+
+    <footer>
+        <asp:ContentPlaceHolder ID="footer" runat="server">
+        </asp:ContentPlaceHolder>
+    </footer>
+</body>
+</html>
